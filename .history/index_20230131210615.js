@@ -3,7 +3,7 @@ const cors = require("cors");
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
-const { PORT = 3000 } = process.env || 3000;
+const { PORT = 3000 } = process.env;
 
 const { User, Cupcake } = require("./db");
 // TODO - require express-openid-connect and destructure auth from it
