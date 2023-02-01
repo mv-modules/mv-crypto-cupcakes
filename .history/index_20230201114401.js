@@ -24,7 +24,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(auth(config));
-app.use(require("./middlware/getUser").getUser);
+app.use(require("./middlware/getUser"));
 
 app.get("/", (req, res, next) => {
   try {
